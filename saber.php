@@ -99,7 +99,7 @@ if ($encode == 1) {
 ";
 } elseif ($encode == 2) {
 	echo "\e[0;36mString To Encode: \e[0m";
-	$url = bin2hex(fgets(STDIN));
+	$url = bin2hex(str_replace("\n", '', str_replace("\r", '', fgets(STDIN))));
  $url = chunk_split($url,2,'%');
  $url = "%".substr($url, 0, strlen($url) - 1); 
 	echo "\e[0;36mResult: $url \e[0m
