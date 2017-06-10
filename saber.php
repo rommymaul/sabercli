@@ -161,7 +161,7 @@ print "\n\e[1;33m=========+[ Str To md5 ]+==========	\e[0m
 
 ";
 	echo "\e[0;36mString To md5: \e[0m";
-	$md5 = md5(fgets(STDIN));
+	$md5 = md5(str_replace("\n", '', str_replace("\r", '', fgets(STDIN))));
 	echo "\e[0;36mResult: $md5 \e[0m
 
 ";
