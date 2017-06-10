@@ -93,7 +93,7 @@ $encode = fgets(STDIN);
 
 if ($encode == 1) {
 	echo "\e[0;36mString To Encode: \e[0m";
-	$base64 = base64_encode(fgets(STDIN));
+	$base64 = base64_encode(str_replace("\n", '', str_replace("\r", '', fgets(STDIN))));
 	echo "\e[0;36mResult: $base64 \e[0m
 	
 ";
@@ -107,13 +107,13 @@ if ($encode == 1) {
 ";
 } elseif ($encode == 3) {
 	echo "\e[0;36mString To Encode: \e[0m";
-	$hex = bin2hex(fgets(STDIN));
+	$hex = bin2hex(str_replace("\n", '', str_replace("\r", '', fgets(STDIN))));
 	echo "\e[0;36mResult: $hex \e[0m
 	
 ";
 } elseif ($encode == 4) {
 	echo "\e[0;36mString To Encode: \e[0m";
-	$uu = convert_uuencode(fgets(STDIN));
+	$uu = convert_uuencode(str_replace("\n", '', str_replace("\r", '', fgets(STDIN))));
 	echo "\e[0;36mResult: $uu \e[0m	";
 }
 } elseif ($list == 6) {
@@ -134,7 +134,7 @@ $decode = fgets(STDIN);
 
 if ($decode == 1) {
 	echo "String To Decode: ";
-	$dbase64 = base64_decode(fgets(STDIN));
+	$dbase64 = base64_decode(str_replace("\n", '', str_replace("\r", '', fgets(STDIN))));
 	echo "Result: $dbase64";
 } elseif ($decode == 2) {
 	echo "\e[0;36mString To Decode: \e[0m";
@@ -151,7 +151,7 @@ if ($decode == 1) {
 ";
 } elseif ($decode == 4) {
 	echo "\e[0;36mString To Decode: \e[0m";
-	$duu = convert_uudecode(fgets(STDIN));
+	$duu = convert_uudecode(str_replace("\n", '', str_replace("\r", '', fgets(STDIN))));
 	echo "\e[0;36mResult: $duu \e[0m
 
 ";
