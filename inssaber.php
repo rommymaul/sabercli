@@ -17,4 +17,4 @@ system("chmod +x /data/data/com.termux/files/usr/bin/saber");
 //checking if saber v.1 already copied
 echo "checking saber\n";
 sleep(1);
-echo (is_file('/data/data/com.termux/files/usr/bin/saber')) ? "success to install,\nrun the tools with command php saber\n" : "failed to install\n";
+echo (is_file('/data/data/com.termux/files/usr/bin/saber')) ? "success to install,\nrun the tools with command saber\n" : "failed to install\n";
