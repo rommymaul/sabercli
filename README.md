@@ -1,8 +1,11 @@
 SABER CLI-TOOLS V.1
 
 <h2>How To Use</h2>
-<h4>1. Edit .bashrc and add new alias
+<h4>1. Download Termux
 <br>
-Example: alias saber="cd /sdcard/pathoffile/ && php saber.php"
+2. Clone sabercli
 <br>
-2. Use menu of fitur do you want</h4>
+3. Cd sabercli && php inssaber.php
+<br>
+4. Run sabercli with commands saber
+</h4>
