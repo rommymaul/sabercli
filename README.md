@@ -7,5 +7,5 @@ SABER CLI-TOOLS V.1
 <br>
 3. Cd sabercli && php inssaber.php
 <br>
-4. Run sabercli with commands php saber
+4. Run sabercli with commands saber
 </h4>
